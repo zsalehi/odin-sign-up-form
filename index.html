@@ -14,35 +14,50 @@
             <span class="logo-text">ODIN</span>
         </div>
         <div class="section-footer">
-            <span class="footer-text">Photo by <a href="https://google.com">Enter name here</a> on <a href="http://google.com">Dribble</a>.</span>
+            <span class="footer-text">Photo by <a href="https://unsplash.com/photos/ioJBsYQ-pPM">Alex Perez</a> on <a href="http://unsplash.com">Unsplash</a>.</span>
         </div>
     </div>
     <div class="section content">
-        <div class="text">
-            <h3 class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="emphasis">now</span> to get started.</h3>
-            <h3 class="text">You <span class="emphasis">know</span> you want to.</h3>
+        <div class="text-container">
+            <div class="text">
+                <h3 class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="emphasis">now</span> to get started.</h3>
+                <h3 class="text">You <span class="emphasis">know</span> you want to.</h3>
+            </div>
         </div>
         <div class="form-container">
             <form action="http://httpbin.org/post" method="post">
-                <fieldset>
-                    <legend class="form-title">Let's do this!</legend>
-                    <label for="first_name">First Name</label>
-                    <input type="text" name="first_name" id="first_name" placeholder="Thor">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name" id="last_name" placeholder="Odinson">
-                </fieldset>
-                <fieldset>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="todinson@odinson.com">
-                    <label for="phone_number">Phone Number</label>
-                    <input type="tel" name="phone_number" id="phone_number" maxlength="10">    
-                </fieldset>
-                <fieldset>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required class="error">
-                    <label for="confirm_password">Password</label>
-                    <input type="password" name="confirm_password" id="confirm_password" required class="error" >
-                </fieldset>
+                <legend class="form-title">Let's do this!</legend>
+                <div class="name-inputs">
+                    <div class="form-input firstname">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="Thor">
+                    </div>
+                    <div class="form-input lastname">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Odinson">
+                    </div>
+                </div>
+                <div class="contact-inputs">
+                    <div class="form-input emailaddress">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="todinson@odinson.com">
+                    </div>
+                    <div class="form-input phonenumber">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" name="phone_number" id="phone_number" maxlength="10">    
+                    </div>                
+                </div>
+                <div class="password-inputs">
+                    <div class="form-input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required class="error">
+                        <span class="password-validation">* Passwords do not match</span>
+                    </div> 
+                    <div class="form-input">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required class="error" >
+                    </div>
+                </div>
             </form>
         </div>
         <div class="form-submit-container">
